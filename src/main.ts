@@ -20,7 +20,7 @@ app.config.errorHandler = (err: any, vm) => {
         stack: err.stack,
         error_name: err.name
     }
-    vm!.$message.error(`您触发了一个${err.name} 错误`)
+    // vm!.$message.error(`您触发了一个${err.name} 错误`)
     localStorage.setItem('jsErrorList', JSON.stringify(jsError))
     //   findCodeBySourceMap(errorStack[0])
     //   console.log('stack', errorStack)
